@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Ansh Sharma | Freelance Project Enquiry</title>
+  <meta name="description" content="Send a professional project enquiry to Ansh Sharma for web development, Python development, SQL design, backend development, bug fixing, or portfolio websites.">
+  <meta name="keywords" content="contact Ansh Sharma, hire freelance developer, project enquiry, web development quote">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:title" content="Contact Ansh Sharma for Freelance Projects">
+  <meta property="og:description" content="Submit your project enquiry and request a portfolio PDF.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Ansh Sharma",
+    "url": "https://example.com/contact.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-header></div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell me what you want to build.</h1>
+        <p>Use the enquiry form to share your service requirement, budget, and project details. A lead data object is generated on submission and prepared for EmailJS or a backend API.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="enquiry-title">
+      <div class="container contact-grid">
+        <form class="enquiry-form" id="enquiryForm" novalidate>
+          <h2 id="enquiry-title">Professional Enquiry Form</h2>
+          <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+          <div class="form-grid">
+            <label>Full Name
+              <input type="text" name="fullName" id="fullName" autocomplete="name" required>
+              <span class="field-error" data-error-for="fullName"></span>
+            </label>
+            <label>Email
+              <input type="email" name="email" id="email" autocomplete="email" required>
+              <span class="field-error" data-error-for="email"></span>
+            </label>
+            <label>Phone Number
+              <input type="tel" name="phone" id="phone" autocomplete="tel" inputmode="numeric" required>
+              <span class="field-error" data-error-for="phone"></span>
+            </label>
+            <label>Company Name
+              <input type="text" name="company" id="company" autocomplete="organization">
+              <span class="field-error" data-error-for="company"></span>
+            </label>
+            <label>Service Required
+              <select name="service" id="service" required>
+                <option value="">Select a service</option>
+                <option>Web Development</option>
+                <option>Python Development</option>
+                <option>SQL Database Design</option>
+                <option>Backend Development</option>
+                <option>Bug Fixing</option>
+                <option>Portfolio Website Development</option>
+              </select>
+              <span class="field-error" data-error-for="service"></span>
+            </label>
+            <label>Budget
+              <input type="text" name="budget" id="budget" inputmode="decimal" placeholder="Example: 15000" required>
+              <span class="field-error" data-error-for="budget"></span>
+            </label>
+          </div>
+          <label>Project Description
+            <textarea name="description" id="description" rows="6" minlength="20" required></textarea>
+            <span class="field-error" data-error-for="description"></span>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="portfolioRequest" id="portfolioRequest">
+            <span>Send me Ansh Sharma's portfolio PDF by email.</span>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" name="terms" id="terms" required>
+            <span>I agree to the terms and conditions for being contacted about this enquiry.</span>
+          </label>
+          <span class="field-error" data-error-for="terms"></span>
+          <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+          <p class="form-note">EmailJS/API placeholders are configured in <code>js/script.js</code>. Replace placeholder IDs before production launch.</p>
+        </form>
+
+        <aside class="contact-aside" aria-label="Contact information">
+          <h2>Contact Information</h2>
+          <p><strong>Email:</strong> anshsharma0505@gmail.com</p>
+          <p><strong>Phone:</strong> 7666195585</p>
+          <p><strong>Availability:</strong> Freelance projects and project consultations</p>
+          <a class="btn btn-secondary" href="assets/Ansh_Sharma_CSE_2026.pdf" download aria-label="Download resume PDF" data-track="portfolio_download">Download Portfolio</a>
+          <div class="map-frame">
+            <iframe title="Google Map showing India" src="https://www.google.com/maps?q=India&output=embed" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

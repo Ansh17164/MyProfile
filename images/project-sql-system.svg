@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">SQL database preview</title>
+  <desc id="desc">A relational database diagram mockup.</desc>
+  <rect width="640" height="420" fill="#edf3f8"/>
+  <rect x="70" y="82" width="150" height="92" rx="8" fill="#ffffff" stroke="#0d6b6f" stroke-width="3"/>
+  <rect x="420" y="82" width="150" height="92" rx="8" fill="#ffffff" stroke="#0d6b6f" stroke-width="3"/>
+  <rect x="245" y="245" width="150" height="92" rx="8" fill="#ffffff" stroke="#c7263a" stroke-width="3"/>
+  <path d="M220 128 H420 M320 174 V245" stroke="#5f6e7d" stroke-width="4" fill="none"/>
+  <rect x="95" y="112" width="100" height="12" rx="4" fill="#16202a"/>
+  <rect x="95" y="138" width="72" height="10" rx="4" fill="#5f6e7d"/>
+  <rect x="445" y="112" width="100" height="12" rx="4" fill="#16202a"/>
+  <rect x="445" y="138" width="72" height="10" rx="4" fill="#5f6e7d"/>
+  <rect x="270" y="275" width="100" height="12" rx="4" fill="#16202a"/>
+  <rect x="270" y="301" width="72" height="10" rx="4" fill="#5f6e7d"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Business website preview</title>
+  <desc id="desc">A clean website interface mockup.</desc>
+  <rect width="640" height="420" fill="#edf3f8"/>
+  <rect x="70" y="70" width="500" height="280" rx="8" fill="#ffffff" stroke="#d9e2ea"/>
+  <rect x="100" y="105" width="150" height="18" rx="4" fill="#0d6b6f"/>
+  <rect x="100" y="150" width="230" height="22" rx="4" fill="#16202a"/>
+  <rect x="100" y="188" width="190" height="12" rx="4" fill="#5f6e7d"/>
+  <rect x="100" y="214" width="260" height="12" rx="4" fill="#5f6e7d"/>
+  <rect x="100" y="256" width="110" height="38" rx="8" fill="#c7263a"/>
+  <rect x="385" y="130" width="135" height="150" rx="8" fill="#d9e2ea"/>
+  <circle cx="452" cy="185" r="42" fill="#0d6b6f"/>
+</svg>
