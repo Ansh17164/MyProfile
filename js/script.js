@@ -211,10 +211,14 @@ function validateLead(data) {
   const errors = {};
   const namePattern = /^[A-Za-z ]+$/;
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Ensures 10 digits total, starting only with 6, 7, 8, or 9
   const phonePattern = /^[6-9]\d{9}$/;
-  const trimmedName = data.fullName.trim();
-  const nameParts = trimmedName.split(/\s+/);
 
+  const trimmedName = data.fullName.trim();
+  // Splits by spaces and filters out any empty strings from accidental double spaces
+  const nameParts = trimmedName.split(/\s+/).filter(part => part.length > 0);
+
+  // 1. Full Name Validation Block
   if (!trimmedName) {
     errors.fullName = "Name cannot be empty.";
   } else if (!namePattern.test(trimmedName)) {
@@ -223,12 +227,17 @@ function validateLead(data) {
     errors.fullName = "Please enter both your first name and last name.";
   }
 
-  if (!emailPattern.test(data.email.trim())) errors.email = "Enter a valid email address.";
-  
+  // 2. Email Validation Block
+  if (!emailPattern.test(data.email.trim())) {
+    errors.email = "Enter a valid email address.";
+  }
+
+  // 3. Phone Number Validation Block
   if (!phonePattern.test(data.phone.trim())) {
     errors.phone = "Phone number must be 10 digits and start with 6, 7, 8, or 9.";
   }
   
+  // 4. Other Fields Blocks
   if (!data.service) errors.service = "Please select a service.";
   if (!data.budget.trim() || Number.isNaN(Number(data.budget))) errors.budget = "Budget must be numeric.";
   if (data.description.trim().length < 20) errors.description = "Project description must be at least 20 characters.";
