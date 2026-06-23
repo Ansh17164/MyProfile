@@ -102,6 +102,35 @@ a {
   font-weight: 800;
 }
 
+/* New CSS properties for the circular profile picture */
+.brand-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--line);
+}
+
+/* New CSS properties to wrap and position the stacked brand text */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.brand-subtitle {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
 .brand-mark {
   width: 42px;
   height: 42px;
@@ -283,6 +312,7 @@ a {
 .trust-strip span,
 .skill-cloud span,
 .tech-list {
+  padding: 0.45rem 0.7 your-profile-pic;
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -290,14 +320,6 @@ a {
   color: var(--muted);
   font-weight: 700;
   font-size: 0.9rem;
-}
-
-.profile-panel,
-.page-photo {
-  overflow: hidden;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  background: #fff;
 }
 
 .profile-panel,
@@ -593,9 +615,6 @@ cite {
 
 .video-frame {
   border: 8px solid #fff;
-}
-
-.video-frame {
   aspect-ratio: 16 / 9;
 }
 
