@@ -5,9 +5,9 @@ const siteConfig = {
   portfolioPdf: "assets/Ansh_Sharma_CSE_2026.pdf",
   gaMeasurementId: "G-XXXXXXXXXX",
   emailJs: {
-    publicKey: "YOUR_EMAILJS_PUBLIC_KEY",
-    serviceId: "YOUR_EMAILJS_SERVICE_ID",
-    templateId: "YOUR_EMAILJS_TEMPLATE_ID",
+    publicKey: "Wk_1SpZumNUrYwz6X",
+    serviceId: "service_9ln6lfg",
+    templateId: "template_0sjybb8",
     portfolioTemplateId: "YOUR_EMAILJS_PORTFOLIO_TEMPLATE_ID"
   },
   apiEndpoint: "https://your-backend.example.com/api/leads"
@@ -175,10 +175,23 @@ function renderFooter() {
           <h3>Contact Information</h3>
           <p>${siteConfig.email}</p>
           <p>${siteConfig.phone}</p>
-          <div class="social-links">
-            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:${siteConfig.email}">Email</a>
+          
+          <div class="social-links" style="display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem; align-items: center;">
+
+            <a href="https://github.com/Ansh17164" target="_blank" rel="noopener"aria-label="GitHub Profile" style="display: inline-block; color: inherit; transition: color 0.2s ease;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display: block;">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg></a>
+
+            <a href="https://www.linkedin.com/in/ansh-sharma-b99789291?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener"aria-label="LinkedIn Profile" style="display: inline-block; color: inherit; transition: color 0.2s ease;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display: block;">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg></a>
+              
+            <a href="mailto:${siteConfig.email}" aria-label="Send Email" style="display: inline-block; color: inherit; transition: color 0.2s ease;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display: block;">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg></a>
           </div>
         </section>
       </div>
